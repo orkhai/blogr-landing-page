@@ -27,6 +27,10 @@ header {
   border-style: none;
 }
 
+.hamburger:hover {
+  cursor: pointer;
+}
+
 .hamburger-icon {
   background-image: url(images/icon-hamburger.svg);
   background-repeat: no-repeat;
@@ -273,7 +277,7 @@ header {
 }
 
 .header-content-buttons {
-  width: 98%;
+  width: 100%;
   margin: 3rem auto 0;
 }
 
@@ -566,5 +570,13 @@ footer ul {
     text-decoration: underline;
     text-decoration-thickness: 0.15rem;
     transform: scale(1.03);
+  }
+}
+
+@media (max-width: 56.1875rem) {
+  .product-dropdown-open,
+  .company-dropdown-open,
+  .connect-dropdown-open {
+    display: none;
   }
 }
